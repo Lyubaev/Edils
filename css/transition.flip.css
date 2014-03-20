@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/******************************
+== FLIP == 
+******************************/
+.edils.flip .slides>section {
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+  
+  -webkit-transform-origin: 50% 50%;
+     -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.edils[data-direction="horizontal"].flip .slides section.past {
+  -webkit-transform: rotateY(-180deg);
+     -moz-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+       -o-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.edils[data-direction="horizontal"].flip .slides section.future {
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+       -o-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.edils[data-direction="vertical"].flip .slides section.past {
+  -webkit-transform: rotateX(-180deg);
+     -moz-transform: rotateX(-180deg);
+      -ms-transform: rotateX(-180deg);
+       -o-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.edils[data-direction="vertical"].flip .slides section.future {
+  -webkit-transform: rotateX(180deg);
+     -moz-transform: rotateX(180deg);
+      -ms-transform: rotateX(180deg);
+       -o-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+/* IS REVERSE */
+.edils[data-direction="horizontal"].flip.reverse .slides section.past {
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+       -o-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.edils[data-direction="horizontal"].flip.reverse .slides section.future {
+  -webkit-transform: rotateY(-180deg);
+     -moz-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+       -o-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.edils[data-direction="vertical"].flip.reverse .slides section.past {
+  -webkit-transform: rotateX(180deg);
+     -moz-transform: rotateX(180deg);
+      -ms-transform: rotateX(180deg);
+       -o-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.edils[data-direction="vertical"].flip.reverse .slides section.future {
+  -webkit-transform: rotateX(-180deg);
+     -moz-transform: rotateX(-180deg);
+      -ms-transform: rotateX(-180deg);
+       -o-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}

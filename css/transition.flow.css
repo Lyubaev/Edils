@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/******************************
+== FLOW == 
+******************************/
+.edils[data-direction="horizontal"].flow .slides>section {
+  -webkit-transform-origin: 50% 100%;
+     -moz-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+}
+
+.edils[data-direction="horizontal"].flow .slides section.past {
+  -webkit-transform: translate(-105%, 0) scale(0.4) rotateY(15deg);
+     -moz-transform: translate(-105%, 0) scale(0.4) rotateY(15deg);
+      -ms-transform: translate(-105%, 0) scale(0.4) rotateY(15deg);
+       -o-transform: translate(-105%, 0) scale(0.4) rotateY(15deg);
+          transform: translate(-105%, 0) scale(0.4) rotateY(15deg);
+}
+
+.edils[data-direction="horizontal"].flow .slides section.future {
+  -webkit-transform: translate(105%, 0) scale(0.4) rotateY(-15deg);
+     -moz-transform: translate(105%, 0) scale(0.4) rotateY(-15deg);
+      -ms-transform: translate(105%, 0) scale(0.4) rotateY(-15deg);
+       -o-transform: translate(105%, 0) scale(0.4) rotateY(-15deg);
+          transform: translate(105%, 0) scale(0.4) rotateY(-15deg);
+}
+
+.edils[data-direction="vertical"].flow .slides section.past {
+  -webkit-transform: translate(0, 105%) scale(0.3);
+     -moz-transform: translate(0, 105%) scale(0.3);
+      -ms-transform: translate(0, 105%) scale(0.3);
+       -o-transform: translate(0, 105%) scale(0.3);
+          transform: translate(0, 105%) scale(0.3);
+}
+
+.edils[data-direction="vertical"].flow .slides section.future {
+  -webkit-transform: translate(0, -105%) scale(0.3);
+     -moz-transform: translate(0, -105%) scale(0.3);
+      -ms-transform: translate(0, -105%) scale(0.3);
+       -o-transform: translate(0, -105%) scale(0.3);
+          transform: translate(0, -105%) scale(0.3);
+}
+
+/* IS REVERSE */
+.edils[data-direction="horizontal"].flow.reverse .slides section.past {
+  -webkit-transform: translate(105%, 0) scale(0.4) rotateY(-15deg);
+     -moz-transform: translate(105%, 0) scale(0.4) rotateY(-15deg);
+      -ms-transform: translate(105%, 0) scale(0.4) rotateY(-15deg);
+       -o-transform: translate(105%, 0) scale(0.4) rotateY(-15deg);
+          transform: translate(105%, 0) scale(0.4) rotateY(-15deg);
+}
+
+.edils[data-direction="horizontal"].flow.reverse .slides section.future {
+  -webkit-transform: translate(-105%, 0) scale(0.4) rotateY(15deg);
+     -moz-transform: translate(-105%, 0) scale(0.4) rotateY(15deg);
+      -ms-transform: translate(-105%, 0) scale(0.4) rotateY(15deg);
+       -o-transform: translate(-105%, 0) scale(0.4) rotateY(15deg);
+          transform: translate(-105%, 0) scale(0.4) rotateY(15deg);
+}
+
+.edils[data-direction="vertical"].flow.reverse .slides section.past {
+  -webkit-transform: translate(0, -105%) scale(0.3);
+     -moz-transform: translate(0, -105%) scale(0.3);
+      -ms-transform: translate(0, -105%) scale(0.3);
+       -o-transform: translate(0, -105%) scale(0.3);
+          transform: translate(0, -105%) scale(0.3);
+}
+
+.edils[data-direction="vertical"].flow.reverse .slides section.future {
+  -webkit-transform: translate(0, 105%) scale(0.3);
+     -moz-transform: translate(0, 105%) scale(0.3);
+      -ms-transform: translate(0, 105%) scale(0.3);
+       -o-transform: translate(0, 105%) scale(0.3);
+          transform: translate(0, 105%) scale(0.3);
+}

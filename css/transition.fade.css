@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/******************************
+== FADE == 
+******************************/
+.edils.fade .slides>section {
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+  
+  -webkit-transition-property: opacity;
+     -moz-transition-property: opacity;
+      -ms-transition-property: opacity;
+       -o-transition-property: opacity;
+          transition-property: opacity;
+}

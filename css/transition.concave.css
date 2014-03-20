@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/******************************
+== CONCAVE == 
+******************************/
+.edils[data-direction="horizontal"].concave .slides section.past {
+  -webkit-transform: translate(-100%, 0) rotateY(80deg) translate(-100%, 0);
+     -moz-transform: translate(-100%, 0) rotateY(80deg) translate(-100%, 0);
+      -ms-transform: translate(-100%, 0) rotateY(80deg) translate(-100%, 0);
+       -o-transform: translate(-100%, 0) rotateY(80deg) translate(-100%, 0);
+          transform: translate(-100%, 0) rotateY(80deg) translate(-100%, 0);
+}
+
+.edils[data-direction="horizontal"].concave .slides section.future {
+  -webkit-transform: translate(100%, 0) rotateY(-80deg) translate(100%, 0);
+     -moz-transform: translate(100%, 0) rotateY(-80deg) translate(100%, 0);
+      -ms-transform: translate(100%, 0) rotateY(-80deg) translate(100%, 0);
+       -o-transform: translate(100%, 0) rotateY(-80deg) translate(100%, 0);
+          transform: translate(100%, 0) rotateY(-80deg) translate(100%, 0);
+}
+
+.edils[data-direction="vertical"].concave .slides section.past {
+  -webkit-transform: translate(0, -80%) rotateX(-60deg) translate(0, -80%);
+     -moz-transform: translate(0, -80%) rotateX(-60deg) translate(0, -80%);
+      -ms-transform: translate(0, -80%) rotateX(-60deg) translate(0, -80%);
+       -o-transform: translate(0, -80%) rotateX(-60deg) translate(0, -80%);
+          transform: translate(0, -80%) rotateX(-60deg) translate(0, -80%);
+}
+
+.edils[data-direction="vertical"].concave .slides section.future {
+  -webkit-transform: translate(0, 80%) rotateX(60deg) translate(0, 80%);
+     -moz-transform: translate(0, 80%) rotateX(60deg) translate(0, 80%);
+      -ms-transform: translate(0, 80%) rotateX(60deg) translate(0, 80%);
+       -o-transform: translate(0, 80%) rotateX(60deg) translate(0, 80%);
+          transform: translate(0, 80%) rotateX(60deg) translate(0, 80%);
+}
+
+/* IS REVERSE */
+.edils[data-direction="horizontal"].concave.reverse .slides section.past {
+  -webkit-transform: translate(100%, 0) rotateY(-80deg) translate(100%, 0);
+     -moz-transform: translate(100%, 0) rotateY(-80deg) translate(100%, 0);
+      -ms-transform: translate(100%, 0) rotateY(-80deg) translate(100%, 0);
+       -o-transform: translate(100%, 0) rotateY(-80deg) translate(100%, 0);
+          transform: translate(100%, 0) rotateY(-80deg) translate(100%, 0);
+}
+
+.edils[data-direction="horizontal"].concave.reverse .slides section.future {
+  -webkit-transform: translate(-100%, 0) rotateY(80deg) translate(-100%, 0);
+     -moz-transform: translate(-100%, 0) rotateY(80deg) translate(-100%, 0);
+      -ms-transform: translate(-100%, 0) rotateY(80deg) translate(-100%, 0);
+       -o-transform: translate(-100%, 0) rotateY(80deg) translate(-100%, 0);
+          transform: translate(-100%, 0) rotateY(80deg) translate(-100%, 0);
+}
+
+.edils[data-direction="vertical"].concave.reverse .slides section.past {
+  -webkit-transform: translate(0, 80%) rotateX(60deg) translate(0, 80%);
+     -moz-transform: translate(0, 80%) rotateX(60deg) translate(0, 80%);
+      -ms-transform: translate(0, 80%) rotateX(60deg) translate(0, 80%);
+       -o-transform: translate(0, 80%) rotateX(60deg) translate(0, 80%);
+          transform: translate(0, 80%) rotateX(60deg) translate(0, 80%);
+}
+
+.edils[data-direction="vertical"].concave.reverse .slides section.future {
+  -webkit-transform: translate(0, -80%) rotateX(-60deg) translate(0, -80%);
+     -moz-transform: translate(0, -80%) rotateX(-60deg) translate(0, -80%);
+      -ms-transform: translate(0, -80%) rotateX(-60deg) translate(0, -80%);
+       -o-transform: translate(0, -80%) rotateX(-60deg) translate(0, -80%);
+          transform: translate(0, -80%) rotateX(-60deg) translate(0, -80%);
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/******************************
+== ГЛОБАЛЬНЫЕ СТИЛИ == 
+******************************/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+}
+
+::-moz-selection {
+  background: #ffd12f;
+  color: #eee;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ffd12f;
+  color: #eee;
+  text-shadow: none;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background: #dbdbdb;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+          box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background: #dbdbdb;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #b5b5b5;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+          box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/*********************************************
+ * NONE
+ *********************************************/
+.edils.none .slides section {
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+  
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}

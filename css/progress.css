@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/******************************
+== СТРОКА ПРОГРЕССА И ТАЙМЕР == 
+******************************/
+.edils .bar {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 11;
+  background: rgba(180, 173, 149, 0.3);
+}
+
+.edils .bar span {
+  display: block;
+  height: 100%;
+  width: 0px;
+}
+
+.edils .bar.timer {
+  bottom: 4px;
+  display: none;
+}
+
+.edils .bar.progress {
+  bottom: 0;
+}
+
+.edils .bar.timer span {
+  background: rgba(180, 173, 149, 1);
+}
+
+.edils .bar.progress span {
+  background: rgba(180, 173, 149, 1);
+}

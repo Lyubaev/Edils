@@ -1,0 +1,55 @@
+section h1 {
+  display: inline;
+  font: 400 7em 'Josefin Sans', Trebuchet MS, sans-serif;
+  line-height: 1;
+  cursor: default;
+  color: #fff;
+  text-shadow: -1px -1px 1px rgba(255,255,255,0.2), 1px 1px 1px rgba(255,255,255,0.2), 1px 1px 1px rgba(0,0,0,0.7);
+  
+  -webkit-text-rendering: optimizeSpeed;
+     -moz-text-rendering: optimizeSpeed;
+      -ms-text-rendering: optimizeSpeed;
+       -o-text-rendering: optimizeSpeed;
+          text-rendering: optimizeSpeed;
+  
+  -webkit-font-smoothing: subpixel-antialiased;
+     -moz-font-smoothing: subpixel-antialiased;
+      -ms-font-smoothing: subpixel-antialiased;
+       -o-font-smoothing: subpixel-antialiased;
+          font-smoothing: subpixel-antialiased;
+}
+
+section pre {
+  color: white;
+}
+
+section p {
+ text-align: left;
+ font: 14px serif;
+ color: rgb(10,10,10);
+}
+
+section p:first-letter {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  color: #2fc5ff;
+}
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 100px;
+  height: 100px;
+  font: bold 20px/100px serif;
+  cursor: pointer;
+}
+
+section span {
+  display: block;
+  margin: 50px 55px;
+  font-size: 22px;
+}

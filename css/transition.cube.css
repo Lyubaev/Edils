@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/******************************
+== CUBE == 
+******************************/
+.edils.cube .slides {
+  -webkit-perspective: 1000px;
+     -moz-perspective: 1000px;
+      -ms-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.edils.cube .slides>section {
+  min-height: 100%;
+  padding: 20px;
+  vertical-align: middle;
+  
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+
+  -webkit-transition-timing-function: cubic-bezier(0.695, 0.735, 0.035, 0.980);
+     -moz-transition-timing-function: cubic-bezier(0.695, 0.735, 0.035, 0.980);
+      -ms-transition-timing-function: cubic-bezier(0.695, 0.735, 0.035, 0.980);
+       -o-transition-timing-function: cubic-bezier(0.695, 0.735, 0.035, 0.980);
+          transition-timing-function: cubic-bezier(0.695, 0.735, 0.035, 0.980);
+}
+
+.edils[data-direction="horizontal"].cube .slides section.past {
+  -webkit-transform-origin: 100% 50%;
+     -moz-transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+          
+  -webkit-transform: translate(-100%, 0) rotateY(-90deg);
+     -moz-transform: translate(-100%, 0) rotateY(-90deg);
+      -ms-transform: translate(-100%, 0) rotateY(-90deg);
+       -o-transform: translate(-100%, 0) rotateY(-90deg);
+          transform: translate(-100%, 0) rotateY(-90deg);
+}
+
+.edils[data-direction="horizontal"].cube .slides section.future {
+  -webkit-transform-origin: 0% 50%;
+     -moz-transform-origin: 0% 50%;
+      -ms-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+          
+  -webkit-transform: translate(100%, 0) rotateY(90deg);
+     -moz-transform: translate(100%, 0) rotateY(90deg);
+      -ms-transform: translate(100%, 0) rotateY(90deg);
+       -o-transform: translate(100%, 0) rotateY(90deg);
+          transform: translate(100%, 0) rotateY(90deg);
+}
+
+.edils[data-direction="vertical"].cube .slides section.past {
+  -webkit-transform-origin: 50% 0%;
+     -moz-transform-origin: 50% 0%;
+      -ms-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+          
+  -webkit-transform: translate(0, 100%) rotateX(-90deg);
+     -moz-transform: translate(0, 100%) rotateX(-90deg);
+      -ms-transform: translate(0, 100%) rotateX(-90deg);
+       -o-transform: translate(0, 100%) rotateX(-90deg);
+          transform: translate(0, 100%) rotateX(-90deg);
+}
+
+.edils[data-direction="vertical"].cube .slides section.future {
+  -webkit-transform-origin: 50% 100%;
+     -moz-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  
+  -webkit-transform: translate(0, -100%) rotateX(90deg);
+     -moz-transform: translate(0, -100%) rotateX(90deg);
+      -ms-transform: translate(0, -100%) rotateX(90deg);
+       -o-transform: translate(0, -100%) rotateX(90deg);
+          transform: translate(0, -100%) rotateX(90deg);
+}
+
+/* IS REVERSE */
+.edils[data-direction="horizontal"].cube.reverse .slides section.past {
+  -webkit-transform-origin: 0% 50%;
+     -moz-transform-origin: 0% 50%;
+      -ms-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+          
+  -webkit-transform: translate(100%, 0) rotateY(90deg);
+     -moz-transform: translate(100%, 0) rotateY(90deg);
+      -ms-transform: translate(100%, 0) rotateY(90deg);
+       -o-transform: translate(100%, 0) rotateY(90deg);
+          transform: translate(100%, 0) rotateY(90deg);
+}
+
+.edils[data-direction="horizontal"].cube.reverse .slides section.future {
+  -webkit-transform-origin: 100% 50%;
+     -moz-transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+          
+  -webkit-transform: translate(-100%, 0) rotateY(-90deg);
+     -moz-transform: translate(-100%, 0) rotateY(-90deg);
+      -ms-transform: translate(-100%, 0) rotateY(-90deg);
+       -o-transform: translate(-100%, 0) rotateY(-90deg);
+          transform: translate(-100%, 0) rotateY(-90deg);
+}
+
+.edils[data-direction="vertical"].cube.reverse .slides section.past {
+  -webkit-transform-origin: 50% 100%;
+     -moz-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+          
+  -webkit-transform: translate(0, -100%) rotateX(90deg);
+     -moz-transform: translate(0, -100%) rotateX(90deg);
+      -ms-transform: translate(0, -100%) rotateX(90deg);
+       -o-transform: translate(0, -100%) rotateX(90deg);
+          transform: translate(0, -100%) rotateX(90deg);
+}
+
+.edils[data-direction="vertical"].cube.reverse .slides section.future {
+  -webkit-transform-origin: 50% 0%;
+     -moz-transform-origin: 50% 0%;
+      -ms-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  
+  -webkit-transform: translate(0, 100%) rotateX(-90deg);
+     -moz-transform: translate(0, 100%) rotateX(-90deg);
+      -ms-transform: translate(0, 100%) rotateX(-90deg);
+       -o-transform: translate(0, 100%) rotateX(-90deg);
+          transform: translate(0, 100%) rotateX(-90deg);
+}

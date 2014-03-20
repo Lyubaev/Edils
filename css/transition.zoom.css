@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/******************************
+== ZOOM == 
+******************************/
+.edils.zoom .slides section.past {
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transform: scale(10);
+     -moz-transform: scale(10);
+      -ms-transform: scale(10);
+       -o-transform: scale(10);
+          transform: scale(10);
+}
+
+.edils.zoom .slides section.future {
+  visibility: hidden;
+  opacity: 0;
+  
+  -webkit-transform: scale(0.2);
+     -moz-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+       -o-transform: scale(0.2);
+          transform: scale(0.2);
+}
+
+/* IS REVERSE */
+.edils.zoom.reverse .slides section.past {
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transform: scale(0.2);
+     -moz-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+       -o-transform: scale(0.2);
+          transform: scale(0.2);
+}
+
+.edils.zoom.reverse .slides section.future {
+  visibility: hidden;
+  opacity: 0;
+  
+  -webkit-transform: scale(10);
+     -moz-transform: scale(10);
+      -ms-transform: scale(10);
+       -o-transform: scale(10);
+          transform: scale(10);
+}

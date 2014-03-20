@@ -1,0 +1,62 @@
+.overview {
+  overflow-y: auto;
+}
+
+.overview .edils .slides {
+  position: relative;
+  top: 0;
+  height: auto !important;
+}
+
+.overview .edils .slides>section {
+  position: relative !important;
+  top: 0 !important;
+  display: block !important;
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+  visibility: visible !important;
+  /* Растянуть содержимое во весь размер */
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  margin: 20px 0 50px;
+  
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          
+  -webkit-transform: none !important;
+     -moz-transform: none !important;
+      -ms-transform: none !important;
+       -o-transform: none !important;
+          transform: none !important;
+  
+  background: rgba(255,0,0,0.1);
+}
+
+.overview .slides,
+.overview .slides>section {
+  -webkit-transition: none !important;
+     -moz-transition: none !important;
+      -ms-transition: none !important;
+       -o-transition: none !important;
+          transition: none !important;
+}
+
+.overview .edils .slides>.slides {
+  margin: 20px 0 50px;
+}
+
+.overview .edils .slides>.slides>section {
+  margin: 0;
+}
+
+.overview .edils .controls,
+.overview .edils .bar {
+  display: none !important;
+}
+
+.overview .edils .slides section.future,
+.overview .edils .slides section.past {
+	pointer-events: auto;
+}

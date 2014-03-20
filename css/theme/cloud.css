@@ -1,0 +1,37 @@
+/******************************
+== УПРАВЛЕНИЕ == 
+******************************/
+.edils .controls .keys {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 9px;
+  box-shadow: 0 -2px 15px rgba(248, 248, 248, 1), inset 0 -1px 1px rgba(10, 10, 10, 0.2);
+}
+
+.edils .controls .keys .play {
+  border-left-color: rgb(210, 240, 240);
+}
+
+.edils .controls .keys .stop {
+  background: rgb(210, 240, 240);
+}
+
+.edils .controls .keys .expand {
+  border: 3px solid rgb(210, 240, 240);
+}
+
+.edils .controls .keys .next {
+  border-left-color: rgb(210, 240, 240);
+}
+
+.edils .controls .keys .next:after {
+  border-left-color: rgb(210, 240, 240);
+}
+
+.edils .controls .keys .prev {
+  border-right-color: rgb(210, 240, 240);
+}
+
+.edils .controls .keys .prev:before {
+  border-right-color: rgb(210, 240, 240);
+}

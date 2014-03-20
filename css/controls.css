@@ -1,0 +1,115 @@
+/******************************
+== УПРАВЛЕНИЕ == 
+******************************/
+.edils .controls {
+  display: none;
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  left: 0;
+  bottom: 19px;
+  text-align: center;
+  z-index: 20;
+  
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.edils .controls .keys {
+  display: inline-block;
+  padding: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  height: 100%;
+}
+
+.edils .controls .keys:after {
+  content: '';
+  clear: both;
+}
+
+.edils .controls .keys span {
+  display: block;
+  position: relative;
+  float: left;
+  margin: 4px 4px 0;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.edils .controls .keys span.enabled {
+  cursor: pointer;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.edils .controls .keys span.enabled:active {
+  top: 1px;
+}
+
+.edils .controls .keys .play {
+  display: none;
+  border-left-width: 24px;
+  border-left-color: #b4ad95;
+}
+
+.edils .controls .keys .stop {
+  display: none;
+  margin-left: -11px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: #b4ad95;
+}
+
+.edils .controls .keys .expand {
+  display: none;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: 3px solid #b4ad95;
+}
+
+.edils .controls .keys .next {
+  border-left-width: 12px;
+  border-left-color: #b4ad95;
+}
+
+.edils .controls .keys .next:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -12px;
+  left: 0;
+  
+  border: 12px solid transparent;
+  border-left-width: 12px;
+  border-left-color: #b4ad95;
+}
+
+.edils .controls .keys .prev {
+  border-right-width: 12px;
+  border-right-color: #b4ad95;
+}
+
+.edils .controls .keys .prev:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -12px;
+  left: -24px;
+  
+  border: 12px solid transparent;
+  border-right-width: 12px;
+  border-right-color: #b4ad95;
+}

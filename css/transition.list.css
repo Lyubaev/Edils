@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/******************************
+== LIST (JS) == 
+
+frameN = промежуточный результат
+frame1 = конечный результат
+******************************/
+.edils.list .slides section {
+  -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+
+.edils.list .slides {
+  -webkit-perspective: 1000px;
+  -webkit-perspective-origin: 0% 0%;
+}
+
+.edils[data-direction=horizontal] .slides section[data-transition=list].past.frame1 {
+  opacity: 1;
+  
+  -webkit-transform-origin: 100% 50%;
+  -webkit-transform: translate3d(-120%, 0, 0) rotateY(40deg);
+}
+
+.edils[data-direction=horizontal] .slides section[data-transition=list].past.frame2 {
+  opacity: 1;
+  
+  -webkit-transform-origin: 100% 50%;
+  -webkit-transform: scale(0.6);
+}
+
+.edils[data-direction=horizontal] .slides section[data-transition=list].past {
+  opacity: 1;
+  
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform: scale(0.6) rotateY(0deg);
+}
+/* Задержим показ present */
+.edils[data-direction=horizontal] .slides section[data-transition=list].present.frame1 {
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform: scale(0.6) rotateY(0deg);
+}
+
+.edils[data-direction=horizontal] .slides section[data-transition=list].future {
+  opacity: 1;
+  
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform: scale(0.6) rotateY(0deg);
+}
+
+
+
+
+
+
+
+
+
+/*
+.edils[data-direction=horizontal] .slides section[data-transition=list].past {
+  -webkit-transform-origin: 100% 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(-105%, 0, 0) rotateY(40deg);
+}
+
+.edils[data-direction=horizontal] .slides section[data-transition=list].past.frame2 {
+  -webkit-transform-origin: 50% 50%;
+  opacity: 0;
+  -webkit-transform: scale(0.6) rotateY(0deg);
+}
+
+.edils[data-direction=horizontal] .slides section[data-transition=list].future {
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform: scale(0.6) rotateY(0deg);
+}
+*/
